@@ -1,0 +1,57 @@
+<html>
+  <head>
+          <h2> Fake News Detection with BERT </h2>
+      <title>Fake News Detection Using BERT</title>
+            <hr> </hr>
+      <h3> Background: </h3>
+      <p> <b>32,588</b> Tweets were put through a BERT ML Model using Keras and Tensorflow 2.</p>
+      <p> <b>16,252</b> of tweets came from verified accounts. </p>
+      <p> <b>16,336</b> of tweets came from unverified accounts.</p>
+      <p>These tweets were labeled by the BERT model with a <b>1</b> (detected as real), or a <b>0</b> (detected as fake):
+</p>
+            <hr> </hr>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      // Load Charts and the corechart and barchart packages.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart and bar chart when Charts is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+        ["Element", "Tweet Count:", { role: "style" } ],
+        ["Fake & Verified", 7306, "purple"],
+        ["Fake & Not Verified", 9246, "red"],
+        ["Real & Verified", 8946, "orange"],
+        ["Real & Not Verified", 7090, "green"]
+      ]);
+
+        var piechart_options = {title:'Pie Chart: Fake News Analysis Results',
+                       width:400,
+                       height:300};
+        var piechart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+        piechart.draw(data, piechart_options);
+
+        var barchart_options = {title:'Barchart: Fake News Analysis Results',
+                       width:300,
+                       height:300,
+                       legend: 'none'};
+        var barchart = new google.visualization.BarChart(document.getElementById('barchart_div'));
+        barchart.draw(data, barchart_options);
+      }
+    </script>
+  </head>
+   <body>
+           <!--style="background-color: #f8f8ff;"-->
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="piechart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table>
+  </body>
+</html>
