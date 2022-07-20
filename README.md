@@ -5,6 +5,8 @@ I have created a web application using Flask that allows a user to input text (p
 The files needed to run the program are: Constraint_Train_p.csv (which is the data that the model is trained on), main.py, model.pkl, index.html, and  style.css.
 Attached is the layout of how the files should be organized, as well as how the website looks. 
 
+Original code attributed by https://github.com/Spidy20/Fake_News_Detection.git
+
 
 
 
