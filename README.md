@@ -10,3 +10,5 @@ This was presented at my college's research symposium, where an article came abo
 
 <img width="688" alt="image" src="https://user-images.githubusercontent.com/92758174/179439139-3a530c99-622b-4f27-9cc7-7b2f6dad71d6.png">
 <img width="580" alt="image (1)" src="https://user-images.githubusercontent.com/92758174/179439146-bb78b212-a6e5-4709-a557-a85aa1316795.png">
+
+Original code attributed by https://github.com/Spidy20/Fake_News_Detection.git - however I had to make many changes in order to achieve specific outcomes and used an entirely different ML model.
